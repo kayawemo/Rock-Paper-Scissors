@@ -37,6 +37,8 @@ const playRound = (playerSelection, computerSelection) => {
         return `You lost, ${computerSelection} beats ${playerSelection}`;
     }
 
+    else return "There was a tie!"
+
 }
 
 
@@ -50,6 +52,9 @@ const game = () => {
         const playerSelection = playerInputToLowerCase;
         const computerSelection = computerPlay();
         console.log(playRound(playerSelection, computerSelection));
+
+        //keep track of the scores
+
 
     }
 }
